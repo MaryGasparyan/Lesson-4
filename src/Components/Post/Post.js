@@ -1,6 +1,6 @@
 import React from "react";
 
-function Post(title,description,id){
+const Post = (title,description)=> {
     return(
         <div>
             <h2>{title}</h2>
