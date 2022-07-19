@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-const Post = (title,description)=> {
+const Post = ({title,description})=> {
     return(
         <div>
             <h2>{title}</h2>

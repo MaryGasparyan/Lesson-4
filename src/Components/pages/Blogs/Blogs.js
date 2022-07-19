@@ -27,24 +27,24 @@ const Blogs = () => {
     if(isLoading){
       <h1>Loading...</h1>
     }
-  //console.log(posts[0].title)
+  
   
     return (<div>
       <h1>Blog Articles About Coffee</h1>
     
 
-    <Post title = {posts[0].title} description = {posts[0].body}/>
+    {/* <Post title = {posts[0].title} description = {posts[0].body}/> */}
     { 
-      console.log(posts[0].title)
-    
+     
+    // <Post title = {posts[0].title} description = {posts[0].body}/>
       
-      // posts.map(post=>{
-      //   console.log("Heey")
-      //   return(
-      //   <Post title = {post.title} description = {post.description} id = {post.id}/>
-      //  )
-      // }
-      //  )
+      posts.map((post)=>{
+       
+        return( <Post title = {post.title} description = {post.body} id = {post.id}/>)
+       
+     
+      }
+       )
     }
     </div>
     
